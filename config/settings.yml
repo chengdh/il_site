@@ -1,1 +1,2 @@
-il_platform_domain: "56pt.com"
+il_platform_domain: 56pt.com:4000
+il_platform_register_url: http://56pt.com:4000/register/register.json

@@ -82,6 +82,8 @@ GEM
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     sass (3.2.8)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -116,6 +118,7 @@ DEPENDENCIES
   mysql2
   rails (= 3.2.13)
   rails_config (~> 0.3.1)
+  rest-client (~> 1.6.7)
   sass-rails (~> 3.2.3)
   sqlite3
   twitter-bootstrap-rails

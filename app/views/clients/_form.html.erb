@@ -1,7 +1,7 @@
 <div class="alert alert-warn">
   注意!以下所有项目都为必填项目
 </div>
-<%= form_for @client do |f| %>
+<%= form_for @client,:html => {:id => 'register_form'} do |f| %>
   <fieldset>
   <legend>1.录入基本信息</legend>
   <div class='well well-large'>
@@ -36,7 +36,7 @@
     <div class="input-prepend input-append">
       <span class="add-on"><strong>http://</strong></span>
       <%=f.text_field :subdomain%>
-      <span class="add-on"><strong><%=Settings.il_platform_domain%></strong></span>
+      <span class="add-on"><strong>.<%=Settings.il_platform_domain%></strong></span>
     </div>
     <span class="help-block">该地址将是您登录系统的地址.</span>
   </div>
@@ -61,7 +61,8 @@
     </label>
     </p>
     <p>
-    <%= f.submit "点击建立账户信息",:id => 'btn_submit_register',:disabled => true,:class => 'btn btn-primary btn-large' %>
+    <!--%= link_to "点击建立账户信息","#",:id => 'btn_submit_register',:disabled => true,:class => 'btn btn-primary btn-large' %-->
+    <%= f.submit "点击建立账户信息",:id => 'btn_submit_register',:disabled => true,:disable_with =>"处理中,请稍候..." ,:class => 'btn btn-primary btn-large' %>
     </p>
   </div>
 </fieldset>
