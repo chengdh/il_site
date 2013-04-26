@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  company_name: MyString
+  email: MyString
+  password: MyString
+  subdomain: MyString
+  is_active: false
+
+two:
+  company_name: MyString
+  email: MyString
+  password: MyString
+  subdomain: MyString
+  is_active: false
