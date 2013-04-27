@@ -5,8 +5,6 @@ require "capistrano-rbenv"
 set :rails_env,   "production"
 set :unicorn_env, "local_server"
 set :app_env,     "production"
-#add bundler support
-require 'bundler/capistrano'
 set :application, "local_il_site"
 set :repository,  "."
 set :branch, "master"

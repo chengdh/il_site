@@ -9,7 +9,7 @@ set :app_env,     "production"
 require 'bundler/capistrano'
 set :application, "il_unicom"
 set :repository,  "."
-set :branch, "upgrade_to_rails32"
+set :branch, "master"
 set :deploy_via, :copy
 set :copy_cache, true
 #本地部署时,gzip出现问题,参考
