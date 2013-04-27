@@ -25,6 +25,7 @@ end
 gem 'jquery-rails'
 gem "rails_config", "~> 0.3.1"
 gem "rest-client", "~> 1.6.7"
+gem 'unicorn'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -40,3 +41,8 @@ gem "rest-client", "~> 1.6.7"
 # To use debugger
 # gem 'debugger'
 gem "twitter-bootstrap-rails"
+group :development do
+  gem 'capistrano','~>2.12.0'
+  gem "capistrano-unicorn", "~> 0.1.6"
+  gem 'capistrano-rbenv','~> 1.0.2'
+end
