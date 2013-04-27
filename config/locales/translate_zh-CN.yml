@@ -1,0 +1,14 @@
+zh-CN:
+  activerecord:
+    models:
+      client: 客户信息
+
+
+    attributes:
+      client:
+        company_name: 公司(机构)名称
+        admin: 用户名称
+        email: 电子邮箱
+        password: 密码
+        password_confirmation: 确认密码
+        subdomain: 子域名

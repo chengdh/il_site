@@ -45,7 +45,7 @@ class ClientsController < ApplicationController
     ret = @client.save
     #请求业务系统注册
     require 'rest_client'
-    RestClient.post Settings[:il_platform_register_url],params.to_json,:content_type => :json, :accept => :json
+    RestClient.post Settings[:il_platform_register_url],params.to_json,:content_type => :json, :accept => :json if ret
     respond_to do |format|
       if ret
         format.html { redirect_to "http://#{@client.subdomain}.#{Settings[:il_platform_domain]}", notice: '注册成功,请登录系统.' }
